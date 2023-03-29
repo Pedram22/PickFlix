@@ -3,17 +3,16 @@ import { useState } from 'react';
 const Form = (props) => {
 
     const [selectedGenre, setSelectedGenre] = useState("placeholder");
-// Handle the select input element change and set the value in state
+
 const handleChange = (e) =>{
-    // set the selected state
+    
     setSelectedGenre(e.target.value);
     
 }
-    
-    return (
-        <>
+return (
+<>
  <form onSubmit={ (e) => { props.handleSubmit (e, selectedGenre) } }>
-<label htmlFor="genres">Select the genre:</label>
+<label htmlFor="genres">Select a genre:</label>
 <select onChange={ handleChange } value={ selectedGenre }>
 
 <option value="placeholder" disabled>Genre</option>

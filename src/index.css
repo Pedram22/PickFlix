@@ -6,7 +6,30 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+html {
+  font-size: 125%;
+}
 body {
   background-image: url("../src/pickFlixBackground.jpg");
   background-size: cover;
+}
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+  color:aquamarine;
+}
+a {
+  color:palegoldenrod;
+  text-decoration: none;
+}
+.movieSuggestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movieShowcase {
+height: fit-content;
+width: fit-content;
+box-shadow: 20px 20px 20px 20px #FFFF;
 }

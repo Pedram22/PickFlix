@@ -7,8 +7,6 @@ import Form from './Form';
 import MovieDisplay from './MovieDisplay';
 
 const MovieInfo = () => {
-    
-        const [ movie, setMovies ] = useState([]);
 
         const [ movieGenre, setMovieGenre ] = useState(null); 
 
@@ -32,10 +30,8 @@ const MovieInfo = () => {
             with_genres: movieGenre,
         }
     }).then( (apiData) => {
-        console.log(apiData.data.results);
         
         const randomInteger = randomizer(0,19)
-        console.log(apiData.data.results[randomInteger])
         setRandomMovie(apiData.data.results[randomInteger])
     })
 }else {
@@ -46,8 +42,10 @@ const MovieInfo = () => {
 
 const getGenre = ( e, genre ) => {
     e.preventDefault()
-       
-    setMovieGenre(genre)
+    if (genre !== "placeholder") {
+            
+        setMovieGenre(genre)
+    }
 }
     return  (
       <>
@@ -55,7 +53,7 @@ const getGenre = ( e, genre ) => {
       {
         Object.keys(randomMovie).length !== 0
             ? <MovieDisplay selectedMovie={ randomMovie } />
-            : <p>You Have Not Chosen A Movie</p>
+            : <h3>Please Select A Genre To Generate A Movie</h3>
         }
       </>  
     )
