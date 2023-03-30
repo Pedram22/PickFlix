@@ -13,13 +13,23 @@ body {
   background-image: url("../src/pickFlixBackground.jpg");
   background-size: cover;
 }
+.App {
+  text-align: center;
+}
+
 h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 5rem;
-  color:aquamarine;
+  font-size: 5.5rem;
+  color:rgba(11, 90, 137, 0.817);
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+h2 {
+  color:rgba(239, 50, 84, 0.817);
+  padding-top: 0;
 }
 a {
-  color:palegoldenrod;
+  color:rgba(11, 90, 137, 0.817);
   text-decoration: none;
 }
 .movieSuggestion {
@@ -31,5 +41,8 @@ a {
 .movieShowcase {
 height: fit-content;
 width: fit-content;
-box-shadow: 20px 20px 20px 20px #FFFF;
+box-shadow: 20px 20px 20px 20px palegoldenrod;
+}
+footer{
+  color: #FFF;
 }

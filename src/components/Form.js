@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 const Form = (props) => {
 
-    const [selectedGenre, setSelectedGenre] = useState("placeholder");
+    const [selectedGenre, setSelectedGenre] = useState("");
 
-const handleChange = (e) =>{
+    const handleChange = (e) =>{
     
     setSelectedGenre(e.target.value);
     
