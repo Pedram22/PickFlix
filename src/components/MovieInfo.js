@@ -53,7 +53,7 @@ const getGenre = ( e, genre ) => {
       {
         Object.keys(randomMovie).length !== 0
             ? <MovieDisplay selectedMovie={ randomMovie } />
-            : <h3>Please Select A Genre To Generate A Movie</h3>
+            : <h3>Please Select A Genre For A Movie Suggestion!</h3>
         }
       </>  
     )

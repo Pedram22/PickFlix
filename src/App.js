@@ -1,5 +1,4 @@
-import './index.css'
-import './App.css';
+import './index.css';
 import Header from './components/Header';
 import Footer from "./components/Footer";
 import MovieInfo from './components/MovieInfo';
